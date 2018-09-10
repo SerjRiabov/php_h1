@@ -76,17 +76,17 @@ die;
         }
         else{
             echo "Видача можлива, число купюр:<br>";
-            if($rez[0]==0){
-                echo $arr[1]."x".$rez[1]." ".$arr[2]."x".$rez[2]." ".$arr[3]."x".$rez[3];
+            if($rez[0]!=0){
+                echo $arr[0]."x".$rez[0]." ";
             }
-            if($rez[1]==0){
-                echo $arr[0]."x".$rez[0]." ".$arr[2]."x".$rez[2]." ".$arr[3]."x".$rez[3];
+            if($rez[1]!=0){
+                echo $arr[1]."x".$rez[1]." ";
             }
-            if($rez[2]==0){
-                echo $arr[0]."x".$rez[0]." ".$arr[1]."x".$rez[1]." ".$arr[3]."x".$rez[3];
+            if($rez[2]!=0){
+                echo $arr[2]."x".$rez[2]." ";
             }
-            if($rez[3]==0){
-                echo $arr[0]."x".$rez[0]." ".$arr[1]."x".$rez[1]." ".$arr[2]."x".$rez[2];
+            if($rez[3]!=0){
+                echo $arr[3]."x".$rez[3];
             }
         }
     }
